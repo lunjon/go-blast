@@ -1,0 +1,10 @@
+---
+rate: 10
+duration: 5
+request:
+  url: http://localhost
+  method: GET
+  headers:
+    - name: Authentication
+      value: mytoken
+...

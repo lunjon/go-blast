@@ -1,0 +1,24 @@
+---
+# rate: the number of requests per second per blaster (i.e. the frequency)
+rate: 2
+# duration: how long, measured in seconds, to run the blasting for
+duration: 10
+# request: describes the request to send
+request:
+  # url: a full URL to the endpoint to send the request
+  url: https://example.com
+  # method: the HTTP verb, only GET, POST and DELETED is supported
+  method: POST
+  # headers: a list of headers to use in the requests
+  headers:
+      # name: the key of the header
+    - name: Authentication
+      # value: the value of the header
+      value: mytoken
+  # body: can by anything and will be sent as a corresponding JSON body.
+  # Only used in POST.
+  body:
+    tasks:
+      - name: clean
+        description: Clean the whole house
+...
