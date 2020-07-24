@@ -1,11 +1,13 @@
 # GoBlast
 
-Demonstrates a way to run periodic tasks in goroutines for a limited time.
+`goblast` is a CLI tool for sending a lot of HTTP requests from a single
+machine.
 
 ## How to use it
 
-`goblast` can be invoked with all configuration from the command line
-or provided via a file. For help on how to run it use `goblast -h`.
+`goblast` is rather simpel to use and it can be invoked i two ways:
+- Request configuration provided using flags/options
+- Request configuration specified in a file (see [docs/blast.yaml](docs/blast.yaml) for format).
 
 ## Examples
 
@@ -34,4 +36,3 @@ $ goblast --url https://example.host.com/path \
 Some configuration in the file can be overrided by flags from the command line.
 
 **WARN!** Use this program responsibly.
-
